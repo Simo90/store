@@ -1,9 +1,10 @@
-## Simple store with Laravel and VueJS
+# Simple store with Laravel (5.8) and VueJS
 
-after instalation the project, tab:
-php artisan db:seed
-to add fake data
+## Installation
 
+- php artisan migrate ( create tables )
+- composer dumpautoload ( regenerates the list of all classes that need to be included )
+- php artisan db:seed ( to add fake data )
 
 ## Command Line
 
@@ -12,8 +13,8 @@ to add fake data
   first write the email, then the new password
 - if you want to empty ur DB && || delete all products images : php artisan db:empty
 
-## Featues
+## Features
 
-- Aser can CRUD his products
-- Anyone can add reviews
-- The user can change his password
+- User can CRUD his products
+- Anyone ( auth & guest) can add reviews
+- User can change his password
