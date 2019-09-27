@@ -82,7 +82,7 @@ class ChangePasswordCommand extends Command
      */
     private function getPassword(): string
     {
-        $password = $this->ask('password');
+        $password = $this->secret('password');
         
         if ( strlen($password) < 6 ) {
             die( $this->error('Very easy password!') );
